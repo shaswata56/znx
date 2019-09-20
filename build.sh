@@ -19,7 +19,9 @@ wget -q https://gitlab.com/nitrux/tools/build-utilities/raw/master/copier
 wget -q https://gitlab.com/nitrux/tools/build-utilities/raw/master/mkiso
 
 wget -q http://mirrors.kernel.org/ubuntu/pool/main/u/util-linux/libmount1_2.33.1-0.1ubuntu2_amd64.deb
+wget -q http://mirrors.kernel.org/ubuntu/pool/main/u/util-linux/libsmartcols1_2.33.1-0.1ubuntu2_amd64.deb
 dpkg -i libmount1_2.33.1-0.1ubuntu2_amd64.deb
+dpkg -i libsmartcols1_2.33.1-0.1ubuntu2_amd64.deb
 
 chmod +x appimagetool
 chmod +x copier

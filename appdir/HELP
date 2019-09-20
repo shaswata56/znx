@@ -10,6 +10,7 @@ Commands:
   init <device>                           Initialize the storage device.
   restore <device>                        Restore the ESP (EFI System Partition) of the given device.
   deploy <device> <image> <URL | path>    Deploy an image on a storage device. Do not use whitespaces in filenames.
+  rename <device> <old_name> <new_name>   Rename the specified image.
   update <device> <image>                 Update the specified image.
   revert <device> <image>                 Revert to the previous version of the image.
   clean <device> <image>                  Remove the backup that is created during an update.
@@ -29,6 +30,9 @@ Examples:
   Deploy an image:
   - znx deploy /dev/sdX vendor/release http://foo.bar/image.iso
   - znx deploy /dev/sdX vendor/release /path/to/image.iso
+
+  Rename an image:
+  - znx rename /dev/sdX vendor/release new/name
 
   Update an image:
   - znx update /dev/sdX vendor/release

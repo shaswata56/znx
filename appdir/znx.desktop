@@ -6,3 +6,4 @@ Icon=znx
 Comment="Operating system manager."
 Categories=Utility;
 OnlyShowIn=
+X-AppImage-Integrate=false
